@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            experiment-4
+        </title>
+        <style>
+            body{
+                display: flex;
+                height: 100vh;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+            div{
+
+                background-color: aqua;
+                padding: 20px;
+            }
+            span{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: blanchedalmond;
+                padding: 20px;
+            }
+            #button1{
+                background-color:red;
+                border: none;
+            }    
+        </style>
+        
+    </head>
+    <body>
+        <div><span><button id="button1">click-Me</button>
+        </span></div>
+        <script>
+            const body=document.getElementsByTagName("body")[0];
+            const div=document.getElementsByTagName("div")[0];
+            const span=document.getElementsByTagName("span")[0];
+            const button=document.getElementsByTagName("button")[0];
+            body.addEventListener('click',()=>{
+                console.log("body was clicked")
+            });
+            body.addEventListener('click',()=>{
+                console.log("body was clicked")
+            });
+            div.addEventListener('click',()=>{
+                console.log("div was clicked")
+            });
+            span.addEventListener('click',()=>{
+                console.log("span was clicked")
+            });
+            button.addEventListener('click',()=>{
+                console.log("button was clicked")
+            });
+        </script>
+
+    </body>
+</html>

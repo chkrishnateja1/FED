@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            opartions
+        </title>
+        <script type="text/javaScript">
+              function factorial() {
+                var a=1;
+                var b=parseInt(document.getElementById("num").value);
+                for(var i=1;i<=b;i++)
+                {
+                    a=a*i;
+                }
+                document.getElementById("result").innerHTML=a;        
+            }
+            function reversedNumber() {
+                var n1;
+                var n2=parseInt(document.getElementById("num").value);
+                n1=n2.toString().split('').reverse().join('');
+                document.getElementById("result").innerHTML=n1;
+            }
+            
+        </script>
+    </head>
+    <body>
+        <center>
+            Enter thee number:<input type="text" id="num" placeholder="enter the numer"><br><br>
+            <button type="button" onclick="factorial()" >factorial</button>
+            <button type="button" onclick="factors()">factors</button>
+            <button type="button" onclick="reversedNumber()">reverse the number</button>
+            <button type="button" onclick="Isperfect()">ferfect or not</button><br><br>
+            result:<input type="text" id="result" placeholder="result">
+        </center>
+    </body>
+</html>

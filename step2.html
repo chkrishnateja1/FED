@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <title>
+            step2
+        </title>
+        <style>
+        .a{
+            
+            width:100%;
+            height:100px;
+            background-color: black;
+            opacity: 0.8;
+            border-style: solid;
+            border-color: antiquewhite;
+            border-width: 2px;
+            display: flex;
+       }
+       .b{
+          display: flex;
+          height:85%;
+          width:100%;
+       }
+       .b1{
+          height:auto;
+          width:150px;
+          opacity: 0.8;
+          background-color:black;
+          border-style: solid;
+            border-color: antiquewhite;
+            border-width: 2px;
+        p{
+            color:azure;
+        }    
+        
+       }
+       .b2{
+          height:auto;
+          width:1375px;
+          background-color:lightgray;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+       }
+       
+       .b21,.b22,.b23 {
+            
+            height:200px;
+            width:300px;
+            border-style:solid;
+            border-color:black;
+            margin-top:20px;
+            margin-left:100px;
+            border-radius:10%;
+            background-color:whitesmoke;
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+       }.b24{
+        height:330px;
+        width:300px;
+        border-style:solid;
+            border-color:black;
+            margin-top:10px;
+            margin-left:100px;
+            border-radius:10%;
+            background-color:whitesmoke;
+       }
+    .b25{
+        height:330px;
+        width:700px;
+        border-style:solid;
+            border-color:black;
+            margin-top:5px;
+            margin-left:100px;
+            border-radius:10%;
+            background-color:whitesmoke;
+       }
+       h5,h4{
+        color:antiquewhite;
+       }
+       img{
+        border-radius: 20%;
+        width:100px;
+       }
+       #b211,#b221,#b231{
+        height:100;
+        width:120px;
+        margin:10px;
+        }
+       #b212{
+        height:100px;
+        width:100px;
+        border:7px solid orange;
+        border-radius: 70%;
+       }
+       #b222{
+        height:100px;
+        width:100px;
+        border:7px solid lightblue;
+        border-radius: 70%;
+       }
+       #b232{
+        height:100px;
+        width:100px;
+        border:7px solid lightgreen;
+        border-radius: 70%;
+       }
+       #h5{
+        color:black;
+       }
+       h2{
+        margin-left:45px;
+        margin-right:45px;
+       }
+       #hb212{
+        margin:30px;
+        color:orangered;
+       }
+       td{
+        color:black;
+       }
+       th{
+        background-color: black;
+        opacity:0.7;
+        color:white;
+       }
+       #alter{
+         background-color: lightgrey;
+       }
+       #chart{
+          border:1px solid black;
+          height:200px;
+          width:200px;
+          border-radius:50%;
+          margin-top:2%;
+          background-image: conic-gradient(pink 10deg,lightblue 30deg,green 300deg,red);
+           }
+          #notification{
+        margin-left:70%;
+       }
+       #logout{
+        background-color: black;
+        font-size: medium;
+        opacity: 0.9;
+        margin:50%;
+        border-style:none;
+        color:beige;
+       }
+       .a img{
+        border-radius: 50px;
+       }
+       </style>
+    </head>
+    <body>
+        <div class="a"><img src="a.png" alt="e-library"><h4>e-Library</h4><h1 id="notification">🔔</h1>
+            <a href="step3.html" ><button type="button" id="logout">Logout</button></a></div>
+        <div class="b">
+        <div class="b1">
+            <h5>📺dashboard</h5>
+            <h5>🔎surf e-books</h5>
+            <h5>⏳Take quiz</h5>
+        </div>
+        <div class="b2" >
+            <div class="b21"><center><h2 >Total points</h2></center><div id="b211"><h5 id="h5">
+                points scored by Subscriptions
+            </h5></div><div id="b212"><h1 id="hb212">200</h1></div></div>
+            <div class="b22"><center><h2 >Books Subscribed</h2></center><div id="b221"><h5 id="h5">
+                number of books read
+            </h5></div><div id="b222"><h1 id="hb212">2</h1></div></div>
+            <div class="b23"><center><h2>active Subscriptions</h2></center><div id="b231"><h5 id="h5">
+                number of books currently reading
+            </h5></div><div id="b232"><h1 id="hb212">1</h1></div></div>
+            <div class="b24"><center><h3 >Top subscribers by points</h3>
+                <table style="width:80%;height:70%;margin-left:10px;margin-right:10px;">
+                    <tr><th>Name</th><th>points</th></tr>
+                    <tr><td id="alter">krishna teja</td><td id="alter">2200</td></tr>
+                    <tr><td> bhavani sankar</td><td>1900</td></tr>
+                    <tr><td id="alter">surya kumar</td><td id="alter">1700</td></tr>
+                    <tr><td>lokesh</td><td>1800</td></tr>
+                    <tr><td id="alter">Ramesh</td><td id="alter">2000</td></tr>
+                    <tr><td>nikhil</td><td>2100</td></tr>
+                </table></center></div>
+            <div  class="b25"><center><h2 >Trend Chart</h2><table style="height:20px;width:90%;margin-left:5px;margin-right:5px;">
+                <tr><td>🟣Sci-fi</td><td>🟠Novels</td><td>⚪Technical</td><td>🟡History</td><td>🔵General</td><td>🟢Others</td></tr>
+                </td>
+            </table><div id="chart"></div></center></div>
+        </div>
+        </div>
+    </body>
+</html>

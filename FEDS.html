@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Login</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .form-container{
+                height:600px;
+                width:500px;
+                position: relative;
+                margin: 30px 20px;
+                background-color: #28292a;
+                display: flex;
+                padding: 20px;
+    }
+    .form{
+        background-color: white;
+        height: 110px;
+        width: 110px;
+        border-radius: 50%;
+        text-align: center;
+        padding-top:8px ;
+    }
+    img{
+        height: 100px;
+        width:100px;
+        border-radius: 50%;
+    }
+    .space{
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        left: 100px;
+        position: relative;
+        transform:rotateY(30deg) rotateZ(5deg);
+    }
+    p{
+        font-size: 40px;
+        color:white;
+    }
+    input[type='text'],input[type='password']{
+        height: 30px;
+        border-style: none;
+        background-color: #28292a;
+        border:0;
+        border-bottom: 3px solid rgb(247, 241, 241);
+        outline: none;
+    }
+    input[type='button']{
+        height: 40px;
+        width:60px;
+        border-radius: 12px;
+        background-color: #28292a;
+        border-style: 2px solid;
+        border-color:white;
+        color:white;
+    }
+    input[type='text']:hover,input[type='password']:hover{
+        border:0;
+        border-bottom: 1px solid white;
+        outline: none;
+    }
+     </style>
+    </head>
+    <body>  <center>
+            <div class="form-container">
+                    <div class="form">
+                            <img src="color.jpg">
+                    </div>
+                    <div class="space">
+                            <p>Login</p>
+                    </div> 
+                <form><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <input type="text" placeholder="Username" required/><br><br>
+                    <input type="password" placeholder="Password" required/><br><br>
+                    <input class="submit" type="button" value="Login"/><br>
+                </form>
+            </div>
+             </center>
+    </body>
+</html>

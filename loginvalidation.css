@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+body {
+     background-color: blueviolet;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     }
+.container {
+    background-color: aliceblue;
+    width: 500px;
+    border-radius: 5px;
+    max-width: 100%;
+    box-shadow:0px 2px 5px rgba(0,0,0,0.3); 
+
+} 
+ .form-control{
+    position:relative;
+    padding-bottom:10px;
+    margin-bottom: 10px;
+    height:100px;
+ }  
+.form-control input {
+    display:block;
+    margin:10px;
+
+} 
+.form-control span{
+    visibility: visible;
+
+}.form-control small{
+    position:relative;
+    visibility: visible;
+    left:0px;
+    bottom: 0px;
+}
+.form-control.success input{
+    border-color:green;
+}
+.form-control.errror input{
+    border-color: red;
+}
+.form-control.success span.glyphicon glyphicon-ok-circle{
+      color:green;
+      visibility:visible;
+}
+.form-control.errror span.glyphicon glyphicon-exclamation-sign{
+    color:red;
+    visibility: visible;
+}
+.form-control.errror small{
+     color: red;
+     visibility: visible;
+}
